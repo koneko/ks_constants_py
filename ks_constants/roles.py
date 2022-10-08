@@ -62,11 +62,12 @@ class Role(Enum):
     Kraith = (34, RoleType.Hunter, {Language.English: 'Kraith', Language.Korean: '크레이스'}, Developer.Templar, None, True)
     Energizer = (35, RoleType.Builder, {Language.English: 'Energizer', Language.Korean: '에너자이저'}, Developer.Fatline, Developer.Sox, True)
     Andor = (36, RoleType.Builder, {Language.English: 'Andor', Language.Korean: '안도르'}, Developer.Korneel, None, True)
-    DJ = (37, RoleType.Builder, {Language.English: 'DJ', Language.Korean: 'DJ'}, Developer.Sox, None, True)
+    DJ = (37, RoleType.Builder, {Language.English: 'DJ', Language.Korean: '디제이'}, Developer.Sox, None, True)
     Rattlesnake = (38, RoleType.Support, {Language.English: 'Rattlesnake', Language.Korean: '방울뱀'}, Developer.Legacy, Developer.Templar, True)
     SgtHammer = (39, RoleType.Builder, {Language.English: 'SgtHammer', Language.Korean: '해머 상사'}, Developer.Archlei, Developer.Sox, True)
     Chew = (40, RoleType.Support, {Language.English: 'Chew', Language.Korean: '추'}, Developer.Sox, None, True)
     Aewyn = (41, RoleType.Builder, {Language.English: 'Aewyn', Language.Korean: '애윈'}, Developer.Luminous, None, True)
+    Critter_Lord = (42, RoleType.Builder, {Language.English: 'Critter Lord', Language.Korean: '곤충 왕'}, Developer.Korneel, None, True)
 
     def __init__(self,
                  _id: int,
@@ -86,6 +87,9 @@ class Role(Enum):
     @classmethod
     def from_index(cls, index):
         return _roles_list[index]
+
+    def get_index(self):
+        return self._index
 
     def get_team(self) -> Team:
         if self == Role.Random:
