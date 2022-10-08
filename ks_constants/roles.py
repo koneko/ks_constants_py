@@ -20,7 +20,7 @@ class RoleType(Enum):
     def get_team(self):
         return self._team
 
-class Hero(Enum):
+class Role(Enum):
     Kerrigan = (0, RoleType.Hunter, {'en': 'Kerrigan', 'kr': '케리건'}, Developer.geo, Developer.Luminous, True)
     Scientist = (1, RoleType.Builder, {'en': 'Scientist', 'kr': '과학자'}, Developer.geo, Developer.Luminous, True)
     Dark_Templar = (2, RoleType.Support, {'en': 'Dark Templar', 'kr': '암흑기사'}, Developer.geo, Developer.Luminous, True)
@@ -81,7 +81,7 @@ class Hero(Enum):
 
     @classmethod
     def from_index(cls, index):
-        return list(Hero)[index]
+        return list(Role)[index]
 
     def get_role_type(self):
         return self._role_type
