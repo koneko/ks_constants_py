@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='KS_Constants',
-    version='1.2.2',
+    version='1.2.6',
     license='MIT',
     author="Steven Su",
     author_email='ks2devteam@gmail.com',

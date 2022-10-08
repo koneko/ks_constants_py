@@ -21,6 +21,8 @@ class RoleType(Enum):
     def get_team(self) -> Team:
         return self._team
 
+    def to_int(self):
+        return self._id
 
 class Role(Enum):
     Kerrigan = (0, RoleType.Hunter, {Language.English: 'Kerrigan', Language.Korean: '케리건'}, Developer.geo, Developer.Luminous, True)
@@ -83,9 +85,11 @@ class Role(Enum):
 
     @classmethod
     def from_index(cls, index):
-        return list(Role)[index]
+        return _roles_list[index]
 
     def get_team(self) -> Team:
+        if self == Role.Random:
+            raise TypeError("Random does not have a team")
         return self._role_type.get_team()
 
     def get_role_type(self) -> RoleType:
@@ -105,3 +109,5 @@ class Role(Enum):
 
     def is_available(self):
         return self._available
+
+_roles_list = list(Role)

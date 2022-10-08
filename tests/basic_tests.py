@@ -12,6 +12,7 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(Map.Ruins_Of_Imladoon.original_author(), Developer.Fatline)
         self.assertEqual(Map.Ruins_Of_Imladoon.current_author(), Developer.Templar)
         self.assertFalse(Map.Vintage_Shores.is_map_available())
+        self.assertEqual(Map.Classic.get_name(Language.English), Map.Classic.get_english_name())
 
     def test_roles(self):
         self.assertEqual(Role.Ares.get_current_author(), Role.Aewyn.get_current_author())
@@ -21,6 +22,9 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(Role.from_index(5), Role.Ares)
         self.assertEqual(Role.Brakk.get_team(), Team.Kerrigan)
         self.assertEqual(Role.Team_Nova.get_english_name(), Role.Team_Nova.get_name(Language.English))
+        self.assertEqual(Role["Scientist"], Role.from_index(1))
+        self.assertEqual(Role.Scientist, Role.from_index(1))
+
 
 if __name__ == '__main__':
     unittest.main()
