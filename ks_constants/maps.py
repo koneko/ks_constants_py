@@ -1,5 +1,5 @@
 from enum import Enum
-from devs import Developer
+from ks_constants.devs import Developer
 
 
 class Map(Enum):
