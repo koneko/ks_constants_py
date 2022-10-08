@@ -1,9 +1,9 @@
 from enum import Enum
 
 class Region(Enum):
-    North_America = ({"English": 'NA', "Korean": '북미'}),
-    Europe = ({"English": 'EU', "Korean": '유럽'}),
-    Korea = ({"English": 'KR', "Korean": '한국'}),
+    North_America = ({"English": 'NA', "Korean": '북미'})
+    Europe = ({"English": 'EU', "Korean": '유럽'})
+    Korea = ({"English": 'KR', "Korean": '한국'})
     China = ({"English": 'CN', "Korean": '중국'})
 
     def __init__(self, codes):
