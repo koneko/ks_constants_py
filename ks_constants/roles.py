@@ -1,5 +1,5 @@
 from enum import Enum
-from src.devs import Developer
+from devs import Developer
 
 
 class Team(Enum):
