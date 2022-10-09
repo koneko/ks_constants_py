@@ -1,11 +1,15 @@
-from enum import Enum
+from enum import Enum, IntEnum
 from ks_constants.devs import Developer
 from ks_constants.locale import Language
 
 
-class Team(Enum):
+class Team(IntEnum):
     Survivor = 0
     Kerrigan = 1
+
+    @classmethod
+    def from_index(cls, index):
+        return Team.Survivor if index == 0 else Team.Kerrigan
 
 
 class RoleType(Enum):
