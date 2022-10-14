@@ -20,7 +20,7 @@ class Map(Enum):
                 "maps/duck_map.SC2Map",
                 True,
                 None)
-    Four_Seasons = (2,
+    Four_Seasons = (4,
                     {Language.English: 'Four Seasons', Language.Korean: '사계절'},
                     "ZERUS_VOLCANOES",
                     Developer.Luminous,
@@ -28,7 +28,7 @@ class Map(Enum):
                     "maps/four_seasons.SC2Map",
                     True,
                     None)
-    Zerus_Volcanoes = (3,
+    Zerus_Volcanoes = (2,
                        {Language.English: 'Zerus Volcanoes', Language.Korean: '제루스 화산'},
                        "FOUR_SEASONS",
                        Developer.Luminous,
@@ -36,7 +36,7 @@ class Map(Enum):
                        "maps/zerus_volcanoes.SC2Map",
                        True,
                        None)
-    Ruins_Of_Imladoon = (4,
+    Ruins_Of_Imladoon = (3,
                          {Language.English: 'Ruins of Imladoon', Language.Korean: '임라둔의 잔해'},
                          "RUINS_OF_IMLADOON",
                          Developer.Fatline,
