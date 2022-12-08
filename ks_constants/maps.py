@@ -76,6 +76,14 @@ class Map(Enum):
                      "maps/kaldir_cliffs.SC2Map",
                      True,
                      None)
+    Lost_Tides = (9,
+                     {Language.English: 'Lost Tides', Language.Korean: '사라진 물의 흐름'},
+                     "LOST_TIDES",
+                     Developer.Templar,
+                     ["Base.SC2Data/GameData/Terrain/LostTides.xml"],
+                     "maps/lost_tides.SC2Map",
+                     False,
+                     None)    
 
     # galaxy representation is the string value of the Preset in KS2 Galaxy
     def __init__(self,
