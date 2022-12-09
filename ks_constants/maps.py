@@ -20,17 +20,9 @@ class Map(Enum):
                 "maps/duck_map.SC2Map",
                 True,
                 None)
-    Four_Seasons = (4,
-                    {Language.English: 'Four Seasons', Language.Korean: '사계절'},
-                    "ZERUS_VOLCANOES",
-                    Developer.Luminous,
-                    ["Base.SC2Data/GameData/Terrain/FourSeasons.xml"],
-                    "maps/four_seasons.SC2Map",
-                    True,
-                    None)
     Zerus_Volcanoes = (2,
                        {Language.English: 'Zerus Volcanoes', Language.Korean: '제루스 화산'},
-                       "FOUR_SEASONS",
+                       "ZERUS_VOLCANOES",
                        Developer.Luminous,
                        ["Base.SC2Data/GameData/Terrain/ZerusVolcanoes.xml"],
                        "maps/zerus_volcanoes.SC2Map",
@@ -44,6 +36,14 @@ class Map(Enum):
                          "maps/ruins_of_imladoon.SC2Map",
                          True,
                          Developer.Templar)
+    Four_Seasons = (4,
+                    {Language.English: 'Four Seasons', Language.Korean: '사계절'},
+                    "FOUR_SEASONS",
+                    Developer.Luminous,
+                    ["Base.SC2Data/GameData/Terrain/FourSeasons.xml"],
+                    "maps/four_seasons.SC2Map",
+                    False,
+                    None)
     Heart_Of_Amethyst = (5,
                          {Language.English: 'Heart of Amethyst', Language.Korean: '자수정의 심장'},
                          "HEART_OF_AMETHYST",
@@ -74,7 +74,7 @@ class Map(Enum):
                      Developer.Understudy,
                      ["Base.SC2Data/GameData/Terrain/KaldirCliffs.xml"],
                      "maps/kaldir_cliffs.SC2Map",
-                     True,
+                     False,
                      None)
     Lost_Tides = (9,
                      {Language.English: 'Lost Tides', Language.Korean: '사라진 물의 흐름'},
@@ -82,7 +82,7 @@ class Map(Enum):
                      Developer.Templar,
                      ["Base.SC2Data/GameData/Terrain/LostTides.xml"],
                      "maps/lost_tides.SC2Map",
-                     False,
+                     True,
                      None)    
 
     # galaxy representation is the string value of the Preset in KS2 Galaxy
