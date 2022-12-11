@@ -86,7 +86,7 @@ class Map(Enum):
                      False,
                      None)
     Lost_Tides = (9,
-                     {Language.English: 'Kaldir Cliffs', Language.Korean: '사라진 물의 흐름'},
+                     {Language.English: 'Lost Tides', Language.Korean: '잃어버린 강'},
                      "LOST_TIDES",
                      Developer.Templar,
                      ["Base.SC2Data/GameData/Terrain/LostTides.xml"],
