@@ -3,9 +3,19 @@ from ks_constants.devs import Developer
 from ks_constants.locale import Language
 
 
-class Team(IntEnum):
-    Survivor = 0
-    Kerrigan = 1
+class Team(Enum):
+    Survivor = (0, 8)
+    Kerrigan = (1, 2)
+
+    def __init__(self, _id: int, max_players: int):
+        self._id = _id
+        self._max_team_size = max_players
+
+    def get_max_size(self):
+        return self._max_team_size
+
+    def to_int(self):
+        return self._id
 
     @classmethod
     def from_index(cls, index):
@@ -19,7 +29,7 @@ class RoleType(Enum):
     Hunter = (3, Team.Kerrigan)
 
     def __init__(self, _id: int, team: Team):
-        self._id = id
+        self._id = _id
         self._team = team
 
     def get_team(self) -> Team:
