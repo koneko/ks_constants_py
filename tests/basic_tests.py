@@ -25,7 +25,9 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(Role.Team_Nova.get_english_name(), Role.Team_Nova.get_name(Language.English))
         self.assertEqual(Role["Scientist"], Role.from_index(1))
         self.assertEqual(Role.Scientist, Role.from_index(1))
-        self.assertFalse("oisjdfw" in Role)
+        self.assertEqual(Role.from_name("Scientist"), Role.Scientist)
+        self.assertEqual(Role.from_name("Team_Nova"), Role.Team_Nova)
+        self.assertIsNone(Role.from_name("oisjdfw"))
 
     def test_teams(self):
         self.assertEqual(Team.Kerrigan.to_int(), 1)

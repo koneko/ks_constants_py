@@ -6,18 +6,6 @@ from ks_constants.locale import Language
 from enum import Enum, EnumMeta
 
 
-class MetaEnum(EnumMeta):
-    def __contains__(cls, item):
-        try:
-            cls(item)
-        except ValueError:
-            return False
-        return True
-
-
-class BaseEnum(Enum, metaclass=MetaEnum):
-    pass
-
 class Team(Enum):
     Survivor = (0, 8)
     Kerrigan = (1, 2)
@@ -53,7 +41,7 @@ class RoleType(Enum):
     def to_int(self):
         return self._id
 
-class Role(BaseEnum):
+class Role(Enum):
     Kerrigan = (0, RoleType.Hunter, {Language.Chinese: '凯瑞甘', Language.English: 'Kerrigan', Language.Korean: '케리건'}, Developer.geo, Developer.Luminous, True)
     Scientist = (1, RoleType.Builder, {Language.Chinese: '科学家', Language.English: 'Scientist', Language.Korean: '과학자'}, Developer.geo, Developer.Luminous, True)
     Dark_Templar = (2, RoleType.Support, {Language.Chinese: '黑暗圣堂武士', Language.English: 'Dark Templar', Language.Korean: '암흑기사'}, Developer.geo, Developer.Luminous, True)
@@ -116,6 +104,13 @@ class Role(BaseEnum):
     @classmethod
     def from_index(cls, index):
         return _roles_list[index]
+
+    @classmethod
+    def from_name(cls, name):
+        for role in Role:
+            if role.name == name:
+                return role
+        return None
 
     def get_index(self):
         return self._index
