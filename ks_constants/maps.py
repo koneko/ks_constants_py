@@ -1,7 +1,9 @@
 from enum import Enum
 from ks_constants.devs import Developer
 from ks_constants.locale import Language
+import os
 
+KS2_MAPS_DIRECTORY = "ks2-maps"
 
 class Map(Enum):
     Classic = (0,
@@ -12,8 +14,8 @@ class Map(Enum):
                },
                "CLASSIC",
                Developer.Luminous,
-               ["Base.SC2Data/GameData/Terrain/Classic.xml"],
-               "maps/classic.SC2Map",
+               [os.path.join("Base.SC2Data", "GameData", "Terrain", "Classic.xml")],
+               os.path.join(KS2_MAPS_DIRECTORY, "classic.SC2Map"),
                False,
                False,
                None)
@@ -25,8 +27,8 @@ class Map(Enum):
                 },
                 "DUCK_MAP",
                 Developer.Duck,
-                ["Base.SC2Data/GameData/Terrain/DuckMap.xml"],
-                "maps/duck_map.SC2Map",
+                [os.path.join("Base.SC2Data", "GameData", "Terrain", "DuckMap.xml")],
+                os.path.join(KS2_MAPS_DIRECTORY, "duck_map.SC2Map"),
                 True,
                 True,
                 None)
@@ -38,8 +40,8 @@ class Map(Enum):
                        },
                        "ZERUS_VOLCANOES",
                        Developer.Luminous,
-                       ["Base.SC2Data/GameData/Terrain/ZerusVolcanoes.xml"],
-                       "maps/zerus_volcanoes.SC2Map",
+                       [os.path.join("Base.SC2Data", "GameData", "Terrain", "ZerusVolcanoes.xml")],
+                       os.path.join(KS2_MAPS_DIRECTORY, "zerus_volcanoes.SC2Map"),
                        True,
                        True,
                        None)
@@ -51,8 +53,8 @@ class Map(Enum):
                          },
                          "RUINS_OF_IMLADOON",
                          Developer.Fatline,
-                         ["Base.SC2Data/GameData/Terrain/RuinsOfImladoon.xml"],
-                         "maps/ruins_of_imladoon.SC2Map",
+                         [os.path.join("Base.SC2Data", "GameData", "Terrain", "RuinsOfImladoon.xml")],
+                         os.path.join(KS2_MAPS_DIRECTORY, "ruins_of_imladoon.SC2Map"),
                          True,
                          True,
                          Developer.Templar)
@@ -64,8 +66,8 @@ class Map(Enum):
                     },
                     "FOUR_SEASONS",
                     Developer.Luminous,
-                    ["Base.SC2Data/GameData/Terrain/FourSeasons.xml"],
-                    "maps/four_seasons.SC2Map",
+                    [os.path.join("Base.SC2Data", "GameData", "Terrain", "FourSeasons.xml")],
+                    os.path.join(KS2_MAPS_DIRECTORY, "four_seasons.SC2Map"),
                     False,
                     False,
                     None)
@@ -76,8 +78,8 @@ class Map(Enum):
                              Language.Korean: '자수정의 심장'},
                          "HEART_OF_AMETHYST",
                          Developer.Luminous,
-                         ["Base.SC2Data/GameData/Terrain/HeartOfAmethyst.xml"],
-                         "maps/heart_of_amethyst.SC2Map",
+                         [os.path.join("Base.SC2Data", "GameData", "Terrain", "HeartOfAmethyst.xml")],
+                         os.path.join(KS2_MAPS_DIRECTORY, "heart_of_amethyst.SC2Map"),
                          False,
                          False,
                          None)
@@ -89,8 +91,8 @@ class Map(Enum):
                       },
                       "VINTAGE_SHORES",
                       Developer.Templar,
-                      ["Base.SC2Data/GameData/Terrain/VintageShores.xml"],
-                      "maps/vintage_shores.SC2Map",
+                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "VintageShores.xml")],
+                      os.path.join(KS2_MAPS_DIRECTORY, "vintage_shores.SC2Map"),
                       False,
                       False,
                       None)
@@ -102,8 +104,8 @@ class Map(Enum):
                       },
                       "AIUR_FOUNTAINS",
                       Developer.Luminous,
-                      ["Base.SC2Data/GameData/Terrain/AiurFountains.xml"],
-                      "maps/aiur_fountains.SC2Map",
+                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "AiurFountains.xml")],
+                      os.path.join(KS2_MAPS_DIRECTORY, "aiur_fountains.SC2Map"),
                       False,
                       False,
                       None)
@@ -115,8 +117,8 @@ class Map(Enum):
                      },
                      "KALDIR_CLIFFS",
                      Developer.Understudy,
-                     ["Base.SC2Data/GameData/Terrain/KaldirCliffs.xml"],
-                     "maps/kaldir_cliffs.SC2Map",
+                     [os.path.join("Base.SC2Data", "GameData", "Terrain", "KaldirCliffs.xml")],
+                     os.path.join(KS2_MAPS_DIRECTORY, "kaldir_cliffs.SC2Map"),
                      False,
                      False,
                      None)
@@ -128,8 +130,8 @@ class Map(Enum):
                      },
                      "LOST_TIDES",
                      Developer.Templar,
-                     ["Base.SC2Data/GameData/Terrain/LostTides.xml"],
-                     "maps/lost_tides.SC2Map",
+                     [os.path.join("Base.SC2Data", "GameData", "Terrain", "LostTides.xml")],
+                     os.path.join(KS2_MAPS_DIRECTORY, "lost_tides.SC2Map"),
                      True,
                      True,
                      None)
