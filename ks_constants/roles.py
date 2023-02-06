@@ -85,6 +85,8 @@ class Role(Enum):
     Chew = (40, RoleType.Support, {Language.Chinese: '秋伊', Language.English: 'Chew', Language.Korean: '추'}, Developer.Sox, None, True)
     Aewyn = (41, RoleType.Builder, {Language.Chinese: '”先驱者“艾尔文', Language.English: 'Aewyn', Language.Korean: '애윈'}, Developer.Luminous, None, True)
     Critter_Lord = (42, RoleType.Builder, {Language.Chinese: '小动物主宰', Language.English: 'Critter Lord', Language.Korean: '곤충 왕'}, Developer.Korneel, None, True)
+    Nightingale = (43, RoleType.Support, {Language.English: 'Nightingale'},Developer.Luminous, None, True)
+    Sjlerk = (44,RoleType.Support,{Language.Enlish :'Sjlerk'},Developer.Korneel, None, True)
 
     def __init__(self,
                  _id: int,
