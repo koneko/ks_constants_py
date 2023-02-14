@@ -1,9 +1,8 @@
-from enum import Enum, IntEnum
 from ks_constants.devs import Developer
 from ks_constants.locale import Language
 
 
-from enum import Enum, EnumMeta
+from enum import Enum
 
 
 class Team(Enum):

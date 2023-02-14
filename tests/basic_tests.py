@@ -2,6 +2,7 @@ import unittest
 
 from ks_constants.devs import Developer
 from ks_constants.maps import Map
+from ks_constants.ranks import Rank
 from ks_constants.roles import Role, RoleType, Team
 from ks_constants.locale import Language
 
@@ -31,6 +32,9 @@ class TestStringMethods(unittest.TestCase):
 
     def test_teams(self):
         self.assertEqual(Team.Kerrigan.to_int(), 1)
+
+    def test_ranks(self):
+        self.assertGreater(Rank.Bronze.upper_percentile(), 0)
 
 if __name__ == '__main__':
     unittest.main()
