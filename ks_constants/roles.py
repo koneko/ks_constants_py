@@ -58,7 +58,7 @@ class Role(Enum):
     Helios = (14, RoleType.Builder, {Language.Chinese: '赫利俄斯', Language.English: 'Helios', Language.Korean: '헬리오스'}, Developer.Luminous, None, True)
     Random = (15, None, {Language.Chinese: '整点乐子', Language.English: 'Random', Language.Korean: '무작위'}, Developer.Luminous, None, True)
     Thakras = (16, RoleType.Hunter, {Language.Chinese: '塔克拉斯', Language.English: 'Thakras', Language.Korean: '타크라스'}, Developer.Luminous, None, True)
-    Swann = (17, RoleType.Support, {Language.Chinese: '斯旺', Language.English: 'Swann', Language.Korean: '스완'}, Developer.Luminous, None, True)
+    Swann = (17, RoleType.Builder, {Language.Chinese: '斯旺', Language.English: 'Swann', Language.Korean: '스완'}, Developer.Luminous, None, True)
     Warden = (18, RoleType.Support, {Language.Chinese: '监管者', Language.English: 'Warden', Language.Korean: '수호자'}, Developer.Luminous, None, True)
     Selendis = (19, RoleType.Builder, {Language.Chinese: '塞兰迪斯', Language.English: 'Selendis', Language.Korean: '셀렌디스'}, Developer.hex, Developer.Susu, True)
     Niadra = (20, RoleType.Defender, {Language.Chinese: '尼亚德拉', Language.English: 'Niadra', Language.Korean: '니아드라'}, Developer.Luminous, None, True)
