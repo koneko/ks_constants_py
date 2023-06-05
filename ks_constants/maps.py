@@ -148,6 +148,19 @@ class Map(Enum):
                      True,
                      True,
                      None)                     
+    Snow_Prism = (11,
+                     {
+                         Language.Chinese: '',
+                         Language.English: 'Snow Prism',
+                         Language.Korean: '눈 프리즘'
+                     },
+                     "SNOW_PRISM",
+                     Developer.Luminous,
+                     [os.path.join("Base.SC2Data", "GameData", "Terrain", "SnowPrism.xml")],
+                     os.path.join(KS2_MAPS_DIRECTORY, "snow_prism.SC2Map"),
+                     True,
+                     False,
+                     None)
 
     # galaxy representation is the string value of the Preset in KS2 Galaxy
     def __init__(self,
