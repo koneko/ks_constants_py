@@ -30,7 +30,7 @@ class Map(Enum):
                 [os.path.join("Base.SC2Data", "GameData", "Terrain", "DuckMap.xml")],
                 os.path.join(KS2_MAPS_DIRECTORY, "duck_map.SC2Map"),
                 False,
-                False,
+                True,
                 None)
     Zerus_Volcanoes = (2,
                        {
@@ -56,7 +56,7 @@ class Map(Enum):
                          [os.path.join("Base.SC2Data", "GameData", "Terrain", "RuinsOfImladoon.xml")],
                          os.path.join(KS2_MAPS_DIRECTORY, "ruins_of_imladoon.SC2Map"),
                          False,
-                         False,
+                         True,
                          Developer.Templar)
     Four_Seasons = (4,
                     {
@@ -107,7 +107,7 @@ class Map(Enum):
                       [os.path.join("Base.SC2Data", "GameData", "Terrain", "AiurFountains.xml")],
                       os.path.join(KS2_MAPS_DIRECTORY, "aiur_fountains.SC2Map"),
                       True,
-                      True,
+                      False,
                       None)
     Kaldir_Cliffs = (8,
                      {
@@ -133,7 +133,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "LostTides.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "lost_tides.SC2Map"),
                      True,
-                     True,
+                     False,
                      None)
     Death_Valley = (10,
                      {
@@ -146,7 +146,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "DeathValley.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "death_valley.SC2Map"),
                      True,
-                     True,
+                     False,
                      None)                     
     Snow_Prism = (11,
                      {
@@ -159,7 +159,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "SnowPrism.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "snow_prism.SC2Map"),
                      True,
-                     False,
+                     True,
                      None)
 
     # galaxy representation is the string value of the Preset in KS2 Galaxy
