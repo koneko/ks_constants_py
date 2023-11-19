@@ -162,6 +162,22 @@ class Map(Enum):
                      True,
                      None)
 
+    Aduns_Forgotten_Temple = (12,
+                     {
+                         Language.Chinese: '',
+                         Language.English: "Adun's Forgotten Temple",
+                         Language.Korean: "Adun's Forgotten Temple"
+                     },
+                     "Aduns_Forgotten_Temple",
+                     Developer.Luminous,
+                     [],
+                     os.path.join(KS2_MAPS_DIRECTORY, "adun_temple.SC2Map"),
+                     True,
+                     False,
+                     None)
+
+
+
     # galaxy representation is the string value of the Preset in KS2 Galaxy
     def __init__(self,
                  index: int,
