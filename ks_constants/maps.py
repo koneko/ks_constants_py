@@ -168,7 +168,7 @@ class Map(Enum):
                          Language.English: "Adun's Forgotten Temple",
                          Language.Korean: "Adun's Forgotten Temple"
                      },
-                     "Aduns_Forgotten_Temple",
+                     "ADUNS_FORGOTTEN_TEMPLE",
                      Developer.Luminous,
                      [],
                      os.path.join(KS2_MAPS_DIRECTORY, "adun_temple.SC2Map"),
