@@ -195,7 +195,7 @@ class Map(Enum):
                          Language.English: "Canal",
                          Language.Korean: "운하"
                      },
-                     "Canal",
+                     "CANAL",
                      Developer.Azaz,
                      [],
                      os.path.join(KS2_MAPS_DIRECTORY, "canal.SC2Map"),
