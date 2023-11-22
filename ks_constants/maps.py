@@ -30,7 +30,7 @@ class Map(Enum):
                 [os.path.join("Base.SC2Data", "GameData", "Terrain", "DuckMap.xml")],
                 os.path.join(KS2_MAPS_DIRECTORY, "duck_map.SC2Map"),
                 False,
-                True,
+                False,
                 None)
     Zerus_Volcanoes = (2,
                        {
@@ -56,7 +56,7 @@ class Map(Enum):
                          [os.path.join("Base.SC2Data", "GameData", "Terrain", "RuinsOfImladoon.xml")],
                          os.path.join(KS2_MAPS_DIRECTORY, "ruins_of_imladoon.SC2Map"),
                          False,
-                         True,
+                         False,
                          Developer.Templar)
     Four_Seasons = (4,
                     {
@@ -69,7 +69,7 @@ class Map(Enum):
                     [os.path.join("Base.SC2Data", "GameData", "Terrain", "FourSeasons.xml")],
                     os.path.join(KS2_MAPS_DIRECTORY, "four_seasons.SC2Map"),
                     True,
-                    True,
+                    False,
                     None)
     Heart_Of_Amethyst = (5,
                          {
@@ -134,7 +134,7 @@ class Map(Enum):
                      os.path.join(KS2_MAPS_DIRECTORY, "lost_tides.SC2Map"),
                      True,
                      False,
-                     None)
+                     Developer.Templar)
     Death_Valley = (10,
                      {
                          Language.Chinese: '死亡峡谷',
@@ -160,23 +160,74 @@ class Map(Enum):
                      os.path.join(KS2_MAPS_DIRECTORY, "snow_prism.SC2Map"),
                      True,
                      True,
-                     None)
+                     Developer.Luminous)
 
     Aduns_Forgotten_Temple = (12,
                      {
                          Language.Chinese: '',
                          Language.English: "Adun's Forgotten Temple",
-                         Language.Korean: "Adun's Forgotten Temple"
+                         Language.Korean: "아둔의 잊혀진 사원"
                      },
                      "ADUNS_FORGOTTEN_TEMPLE",
                      Developer.Luminous,
                      [],
                      os.path.join(KS2_MAPS_DIRECTORY, "adun_temple.SC2Map"),
                      True,
+                     True,
+                     Developer.Luminous)
+
+    Maze = (13,
+                     {
+                         Language.Chinese: '',
+                         Language.English: "Maze",
+                         Language.Korean: "미로"
+                     },
+                     "MAZE",
+                     Developer.Azaz,
+                     [],
+                     os.path.join(KS2_MAPS_DIRECTORY, "maze.SC2Map"),
+                     True,
+                     True,
+                     Developer.Luminous)
+    Canal = (14,
+                     {
+                         Language.Chinese: '',
+                         Language.English: "Canal",
+                         Language.Korean: "운하"
+                     },
+                     "Canal",
+                     Developer.Azaz,
+                     [],
+                     os.path.join(KS2_MAPS_DIRECTORY, "canal.SC2Map"),
+                     True,
                      False,
-                     None)
-
-
+                     Developer.Luminous)
+    Sand_Fort = (15,
+                     {
+                         Language.Chinese: '',
+                         Language.English: "Sand Fort",
+                         Language.Korean: "모래 요새"
+                     },
+                     "SAND_FORT",
+                     Developer.Azaz,
+                     [],
+                     os.path.join(KS2_MAPS_DIRECTORY, "sand_fort.SC2Map"),
+                     True,
+                     True,
+                     Developer.Luminous)
+    Mar_Sara_Wastelands = (16,
+                     {
+                         Language.Chinese: '',
+                         Language.English: "MAR_SARA_WASTELANDS",
+                         Language.Korean: "Mar Sara 황무지"
+                     },
+                     "MAR_SARA_WASTELANDS",
+                     None,
+                     [],
+                     os.path.join(KS2_MAPS_DIRECTORY, "mar_sara_wastelands.SC2Map"),
+                     True,
+                     False,
+                     Developer.Luminous)
 
     # galaxy representation is the string value of the Preset in KS2 Galaxy
     def __init__(self,
