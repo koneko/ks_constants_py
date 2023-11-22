@@ -210,7 +210,7 @@ class Map(Enum):
                      },
                      "SAND_FORT",
                      Developer.Azaz,
-                     [],
+                     [os.path.join("Base.SC2Data", "GameData", "Terrain", "SandFort.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "sand_fort.SC2Map"),
                      True,
                      True,
