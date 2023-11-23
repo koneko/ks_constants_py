@@ -159,7 +159,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "SnowPrism.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "snow_prism.SC2Map"),
                      True,
-                     True,
+                     False,
                      Developer.Luminous)
 
     Aduns_Forgotten_Temple = (12,
@@ -226,7 +226,7 @@ class Map(Enum):
                      [],
                      os.path.join(KS2_MAPS_DIRECTORY, "mar_sara_wastelands.SC2Map"),
                      True,
-                     False,
+                     True,
                      Developer.Luminous)
 
     # galaxy representation is the string value of the Preset in KS2 Galaxy
