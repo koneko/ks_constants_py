@@ -218,7 +218,7 @@ class Map(Enum):
     Mar_Sara_Wastelands = (16,
                      {
                          Language.Chinese: '',
-                         Language.English: "MAR_SARA_WASTELANDS",
+                         Language.English: "Mar Sara Wastelands",
                          Language.Korean: "Mar Sara 황무지"
                      },
                      "MAR_SARA_WASTELANDS",
