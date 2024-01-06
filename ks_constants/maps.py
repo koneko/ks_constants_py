@@ -17,8 +17,8 @@ class Map(Enum):
                [os.path.join("Base.SC2Data", "GameData", "Terrain", "Classic.xml")],
                os.path.join(KS2_MAPS_DIRECTORY, "classic.SC2Map"),
                False,
-               False,
-               None)
+               True,
+               Developer.Luminous)
     Duck_Map = (1,
                 {
                     Language.Chinese: '鸭鸭',
@@ -30,7 +30,7 @@ class Map(Enum):
                 [os.path.join("Base.SC2Data", "GameData", "Terrain", "DuckMap.xml")],
                 os.path.join(KS2_MAPS_DIRECTORY, "duck_map.SC2Map"),
                 False,
-                False,
+                True,
                 None)
     Zerus_Volcanoes = (2,
                        {
@@ -187,7 +187,7 @@ class Map(Enum):
                      [],
                      os.path.join(KS2_MAPS_DIRECTORY, "maze.SC2Map"),
                      True,
-                     True,
+                     False,
                      Developer.Luminous)
     Canal = (14,
                      {
@@ -226,7 +226,7 @@ class Map(Enum):
                      [],
                      os.path.join(KS2_MAPS_DIRECTORY, "mar_sara_wastelands.SC2Map"),
                      True,
-                     True,
+                     False,
                      Developer.Luminous)
 
     # galaxy representation is the string value of the Preset in KS2 Galaxy

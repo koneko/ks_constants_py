@@ -1,4 +1,4 @@
 rm -r build
 rm -r dist
 python setup.py sdist bdist_wheel
-python -m twine upload dist/*
+twine upload --repository pypi dist/*
