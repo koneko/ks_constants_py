@@ -86,7 +86,7 @@ class Role(Enum):
     Critter_Lord = (42, RoleType.Builder, {Language.Chinese: '小动物主宰', Language.English: 'Critter Lord', Language.Korean: '곤충 왕'}, Developer.Korneel, None, True)
     Nightingale = (43, RoleType.Support, {Language.English: 'Nightingale'}, Developer.Luminous, None, True)
     Sjlerk = (44, RoleType.Support, {Language.English :'Sjlerk'}, Developer.Korneel, None, True)
-
+    Sophia = (45, RoleType.Builder, {Language.English :'Sophia'}, Developer.Korneel, None, True)
     def __init__(self,
                  _id: int,
                  role_type: RoleType,
