@@ -69,7 +69,7 @@ class Map(Enum):
                     [os.path.join("Base.SC2Data", "GameData", "Terrain", "FourSeasons.xml")],
                     os.path.join(KS2_MAPS_DIRECTORY, "four_seasons.SC2Map"),
                     True,
-                    False,
+                    True,
                     None)
     Heart_Of_Amethyst = (5,
                          {
@@ -107,7 +107,7 @@ class Map(Enum):
                       [os.path.join("Base.SC2Data", "GameData", "Terrain", "AiurFountains.xml")],
                       os.path.join(KS2_MAPS_DIRECTORY, "aiur_fountains.SC2Map"),
                       True,
-                      False,
+                      True,
                       None)
     Kaldir_Cliffs = (8,
                      {
@@ -133,7 +133,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "LostTides.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "lost_tides.SC2Map"),
                      True,
-                     False,
+                     True,
                      Developer.Templar)
     Death_Valley = (10,
                      {
@@ -173,7 +173,7 @@ class Map(Enum):
                      [],
                      os.path.join(KS2_MAPS_DIRECTORY, "adun_temple.SC2Map"),
                      True,
-                     True,
+                     False,
                      Developer.Luminous)
 
     Maze = (13,
@@ -213,7 +213,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "SandFort.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "sand_fort.SC2Map"),
                      True,
-                     True,
+                     False,
                      Developer.Luminous)
     Mar_Sara_Wastelands = (16,
                      {
