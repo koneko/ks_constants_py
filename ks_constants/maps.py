@@ -146,7 +146,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "DeathValley.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "death_valley.SC2Map"),
                      True,
-                     True,
+                     False,
                      None)                     
     Snow_Prism = (11,
                      {
@@ -239,7 +239,7 @@ class Map(Enum):
                      [],
                      os.path.join(KS2_MAPS_DIRECTORY, "last_sanctuary.SC2Map"),
                      True,
-                     False,
+                     True,
                      Developer.Feanor)
 
     # galaxy representation is the string value of the Preset in KS2 Galaxy
