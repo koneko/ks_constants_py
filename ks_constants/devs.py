@@ -16,3 +16,4 @@ class Developer(Enum):
     geo = 11
     Gcloud = 12
     Azaz = 13
+    Feanor = 14

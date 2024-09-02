@@ -228,6 +228,19 @@ class Map(Enum):
                      True,
                      False,
                      Developer.Luminous)
+    Last_Sanctuary = (17,
+                     {
+                         Language.Chinese: '',
+                         Language.English: "Last Sanctuary",
+                         Language.Korean: "최후의 성소"
+                     },
+                     "Last Sanctuary",
+                     None,
+                     [],
+                     os.path.join(KS2_MAPS_DIRECTORY, "last_sanctuary.SC2Map"),
+                     True,
+                     False,
+                     Developer.Feanor)
 
     # galaxy representation is the string value of the Preset in KS2 Galaxy
     def __init__(self,
