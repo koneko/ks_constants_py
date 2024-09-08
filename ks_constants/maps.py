@@ -234,7 +234,7 @@ class Map(Enum):
                          Language.English: "Last Sanctuary",
                          Language.Korean: "최후의 성소"
                      },
-                     "Last Sanctuary",
+                     "LAST_SANCTUARY",
                      None,
                      [],
                      os.path.join(KS2_MAPS_DIRECTORY, "last_sanctuary.SC2Map"),
