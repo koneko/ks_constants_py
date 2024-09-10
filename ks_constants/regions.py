@@ -39,6 +39,15 @@ class Region(Enum):
         "CN"
     )
 
+    @classmethod
+    def from_index(cls, index):
+        if not isinstance(index, int):
+            try:
+                index = int(index)
+            except ValueError:
+                print(f'Index provided is not an integer: {index}')
+        return _region_list[index]
+
     # auth_code is the name of the region on the SC2Editor publish screen for authenticating into the region
     def __init__(self, region_id: int, codes: dict[Language, str], auth_code: str):
         self._region_id = region_id
@@ -62,3 +71,5 @@ class Region(Enum):
 
     def get_korean_code(self):
         return self.get_code(Language.Korean)
+
+_region_list = list(Region)
