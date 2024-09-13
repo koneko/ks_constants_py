@@ -1,6 +1,7 @@
 import unittest
 
 from ks_constants.devs import Developer
+from ks_constants.regions import Region
 from ks_constants.maps import Map
 from ks_constants.ranks import Rank
 from ks_constants.roles import Role, RoleType, Team
@@ -35,6 +36,9 @@ class TestStringMethods(unittest.TestCase):
 
     def test_ranks(self):
         self.assertGreater(Rank.Bronze.upper_percentile(), 0)
+
+    def test_regions(self):
+        self.assertEqual(Region.from_index(1), Region.North_America)
 
 if __name__ == '__main__':
     unittest.main()
