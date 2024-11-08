@@ -46,9 +46,9 @@ class RoleType(Enum):
         return self._id
 
 class Role(Enum):
-    Kerrigan = (0, RoleType.Hunter, {Language.Chinese: '凯瑞甘', Language.English: 'Kerrigan', Language.Korean: '케리건'}, Developer.geo, Developer.Luminous, True)
-    Scientist = (1, RoleType.Builder, {Language.Chinese: '科学家', Language.English: 'Scientist', Language.Korean: '과학자'}, Developer.geo, Developer.Luminous, True)
-    Dark_Templar = (2, RoleType.Support, {Language.Chinese: '黑暗圣堂武士', Language.English: 'Dark Templar', Language.Korean: '암흑기사'}, Developer.geo, Developer.Luminous, True)
+    Kerrigan = (0, RoleType.Hunter, {Language.Chinese: '凯瑞甘', Language.English: 'Kerrigan', Language.Korean: '케리건'}, Developer.Geo, Developer.Luminous, True)
+    Scientist = (1, RoleType.Builder, {Language.Chinese: '科学家', Language.English: 'Scientist', Language.Korean: '과학자'}, Developer.Geo, Developer.Luminous, True)
+    Dark_Templar = (2, RoleType.Support, {Language.Chinese: '黑暗圣堂武士', Language.English: 'Dark Templar', Language.Korean: '암흑기사'}, Developer.Geo, Developer.Luminous, True)
     Ascendant = (3, RoleType.Builder, {Language.Chinese: '晋升者', Language.English: 'Ascendant', Language.Korean: '승천자'}, Developer.Luminous, None, True)
     Spirit = (4, RoleType.Builder, {Language.Chinese: '灵魂', Language.English: 'Spirit', Language.Korean: '혼령'}, Developer.Luminous, None, True)
     Ares = (5, RoleType.Builder, {Language.Chinese: '阿瑞斯', Language.English: 'Ares', Language.Korean: '아레스'}, Developer.Luminous, None, True)
@@ -65,7 +65,7 @@ class Role(Enum):
     Thakras = (16, RoleType.Hunter, {Language.Chinese: '塔克拉斯', Language.English: 'Thakras', Language.Korean: '타크라스'}, Developer.Luminous, None, True)
     Swann = (17, RoleType.Builder, {Language.Chinese: '斯旺', Language.English: 'Swann', Language.Korean: '스완'}, Developer.Luminous, None, True)
     Warden = (18, RoleType.Support, {Language.Chinese: '监管者', Language.English: 'Warden', Language.Korean: '수호자'}, Developer.Luminous, None, True)
-    Selendis = (19, RoleType.Builder, {Language.Chinese: '塞兰迪斯', Language.English: 'Selendis', Language.Korean: '셀렌디스'}, Developer.hex, Developer.hex, True)
+    Selendis = (19, RoleType.Builder, {Language.Chinese: '塞兰迪斯', Language.English: 'Selendis', Language.Korean: '셀렌디스'}, Developer.Hex, Developer.Hex, True)
     Niadra = (20, RoleType.Defender, {Language.Chinese: '尼亚德拉', Language.English: 'Niadra', Language.Korean: '니아드라'}, Developer.Luminous, None, True)
     Mira = (21, RoleType.Builder, {Language.Chinese: '米拉', Language.English: 'Mira', Language.Korean: '미라'}, Developer.Luminous, None, True)
     Scion = (22, RoleType.Support, {Language.Chinese: '赛恩', Language.English: 'Scion', Language.Korean: '후계자'}, Developer.Luminous, None, True)
@@ -85,7 +85,7 @@ class Role(Enum):
     Andor = (36, RoleType.Builder, {Language.Chinese: '亚顿', Language.English: 'Andor', Language.Korean: '안도르'}, Developer.Korneel, None, True)
     DJ = (37, RoleType.Builder, {Language.Chinese: '', Language.English: 'DJ', Language.Korean: '디제이'}, Developer.Sox, None, True)
     Rattlesnake = (38, RoleType.Support, {Language.Chinese: '凯文', Language.English: 'Rattlesnake', Language.Korean: '방울뱀'}, Developer.Legacy, Developer.Gcloud, True)
-    SgtHammer = (39, RoleType.Builder, {Language.Chinese: '重锤军士', Language.English: 'SgtHammer', Language.Korean: '해머 상사'}, Developer.Archlei, Developer.hex, True)
+    SgtHammer = (39, RoleType.Builder, {Language.Chinese: '重锤军士', Language.English: 'SgtHammer', Language.Korean: '해머 상사'}, Developer.Archlei, Developer.Hex, True)
     Chew = (40, RoleType.Support, {Language.Chinese: '秋伊', Language.English: 'Chew', Language.Korean: '추'}, Developer.Sox, None, True)
     Aewyn = (41, RoleType.Builder, {Language.Chinese: '”先驱者“艾尔文', Language.English: 'Aewyn', Language.Korean: '애윈'}, Developer.Luminous, None, True)
     Critter_Lord = (42, RoleType.Builder, {Language.Chinese: '小动物主宰', Language.English: 'Critter Lord', Language.Korean: '곤충 왕'}, Developer.Korneel, None, True)
