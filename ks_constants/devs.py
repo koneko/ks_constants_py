@@ -12,8 +12,8 @@ class Developer(Enum):
     Korneel = 7
     Archlei = 8
     Legacy = 9
-    hex = 10
-    geo = 11
+    Hex = 10
+    Geo = 11
     Gcloud = 12
     Azaz = 13
     Feanor = 14
