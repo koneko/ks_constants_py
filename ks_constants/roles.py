@@ -70,7 +70,7 @@ class Role(Enum):
     Mira = (21, RoleType.Builder, {Language.Chinese: '米拉', Language.English: 'Mira', Language.Korean: '미라'}, Developer.Luminous, None, True)
     Scion = (22, RoleType.Support, {Language.Chinese: '赛恩', Language.English: 'Scion', Language.Korean: '후계자'}, Developer.Luminous, None, True)
     Technician = (23, RoleType.Builder, {Language.Chinese: '技术员', Language.English: 'Technician', Language.Korean: '기술자'}, Developer.Fatline, Developer.Gcloud, True)
-    Warfield = (24, RoleType.Builder, {Language.Chinese: '沃菲尔德', Language.English: 'Warfield', Language.Korean: '워필드'}, Developer.Fatline, Developer.Undestudy, True)
+    Warfield = (24, RoleType.Builder, {Language.Chinese: '沃菲尔德', Language.English: 'Warfield', Language.Korean: '워필드'}, Developer.Fatline, Developer.Understudy, True)
     Champion = (25, RoleType.Builder, {Language.Chinese: '冠军', Language.English: 'Champion', Language.Korean: '챔피언'}, Developer.Luminous, None, True)
     Elementalist = (26, RoleType.Support, {Language.Chinese: '元素使', Language.English: 'Elementalist', Language.Korean: '원소술사'}, Developer.Fatline, Developer.Sox, True)
     Brakk = (27, RoleType.Hunter, {Language.Chinese: '巴拉克', Language.English: 'Brakk', Language.Korean: '브라크'}, Developer.Fatline, Developer.Gcloud, True)
