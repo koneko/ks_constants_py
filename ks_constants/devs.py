@@ -17,3 +17,4 @@ class Developer(Enum):
     Gcloud = 12
     Azaz = 13
     Feanor = 14
+    Kuku = 15
