@@ -37,10 +37,7 @@ jobs:
           
       - name: Update version and create tag
         run: |
-          bump2version --new-version ${{ inputs.version }} setup.py --allow-dirty
-          git add setup.py
-          git commit -m "Bump version to ${{ inputs.version }}"
-          git tag -a "v${{ inputs.version }}" -m "Version ${{ inputs.version }}"
+          bump2version --new-version ${{ inputs.version }} --allow-dirty
           git push
           git push --tags
           
