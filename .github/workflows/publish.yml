@@ -37,7 +37,7 @@ jobs:
           
       - name: Update version and create tag
         run: |
-          bump2version --new-version ${{ inputs.version }} --allow-dirty
+          bump2version --new-version ${{ inputs.version }} --allow-dirty patch
           git push
           git push --tags
           
