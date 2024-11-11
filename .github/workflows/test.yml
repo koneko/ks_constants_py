@@ -29,4 +29,4 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: |
-          python -m unittest discover -s ks_constants_py/tests -p "*_tests.py" -v -t .
+          python -m unittest discover -s ks_constants_py/tests -p "*_tests.py" -v -t ks_constants_py
