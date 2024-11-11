@@ -30,4 +30,4 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: |
-          pytest ks_constants_py/tests/basic_tests.py -v
+          pytest tests/basic_tests.py -v
