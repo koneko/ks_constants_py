@@ -241,7 +241,7 @@ class Map(Enum):
                      True,
                      True,
                      Developer.Feanor)
-   No_Hope = (18,
+    No_Hope = (18,
                      {
                          Language.Chinese: '',
                          Language.English: "No Hope",
