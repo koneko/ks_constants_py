@@ -241,7 +241,19 @@ class Map(Enum):
                      True,
                      True,
                      Developer.Feanor)
-
+   No_Hope = (18,
+                     {
+                         Language.Chinese: '',
+                         Language.English: "No Hope",
+                         Language.Korean: ""
+                     },
+                     "NO_HOPE",
+                     None,
+                     [os.path.join("Base.SC2Data", "GameData", "Terrain", "NoHope.xml")],
+                     os.path.join(KS2_MAPS_DIRECTORY, "no_hope.SC2Map"),
+                     True,
+                     True,
+                     Developer.SmugWyrmling)
     # galaxy representation is the string value of the Preset in KS2 Galaxy
     def __init__(self,
                  index: int,
