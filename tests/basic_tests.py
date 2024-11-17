@@ -13,7 +13,7 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(Map.Aiur_Fountains.original_author(), Developer.Luminous)
         self.assertEqual(Map.Ruins_Of_Imladoon.original_author(), Developer.Fatline)
         self.assertEqual(Map.Ruins_Of_Imladoon.current_author(), Developer.Templar)
-        self.assertFalse(Map.Vintage_Shores.is_available())
+        self.assertFalse(Map.Vintage_Shores.is_disliked())
         self.assertEqual(Map.Classic.get_name(Language.English), Map.Classic.get_english_name())
         self.assertEqual(Map.from_index(0), Map.Classic)
 
