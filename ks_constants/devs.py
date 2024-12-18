@@ -20,3 +20,4 @@ class Developer(Enum):
     Kuku = 15
     SmugWyrmling = 16
     Fern = 17
+    TheePotatoLord =18
