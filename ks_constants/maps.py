@@ -86,7 +86,7 @@ class Map(Enum):
                          [os.path.join("Base.SC2Data", "GameData", "Terrain", "HeartOfAmethyst.xml")],
                          os.path.join(KS2_MAPS_DIRECTORY, "heart_of_amethyst.SC2Map"),
                          False,
-                         False,
+                         True,
                          False,
                          None)
     Vintage_Shores = (6,
@@ -156,7 +156,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "DeathValley.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "death_valley.SC2Map"),
                      True,
-                     True,
+                     False,
                      True,
                      None)                     
     Snow_Prism = (11,
