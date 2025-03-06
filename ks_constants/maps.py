@@ -273,6 +273,21 @@ class Map(Enum):
                      True,
                      False,
                      Developer.SmugWyrmling)
+                     
+    Celestial_Skylines = (19,
+                     {
+                         Language.Chinese: '',
+                         Language.English: "Celestial Skylines",
+                         Language.Korean: ""
+                     },
+                     "CELESTIAL_SKYLINES",
+                     None,
+                     [os.path.join("Base.SC2Data", "GameData", "Terrain", "CelestialSkylines.xml")],
+                     os.path.join(KS2_MAPS_DIRECTORY, "celestial_skylines.SC2Map"),
+                     True,
+                     True,
+                     Developer.SmugWyrmling)
+                                        
     # galaxy representation is the string value of the Preset in KS2 Galaxy
     def __init__(self,
                  index: int,
