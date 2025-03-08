@@ -17,7 +17,7 @@ class Map(Enum):
                [os.path.join("Base.SC2Data", "GameData", "Terrain", "Classic.xml")],
                os.path.join(KS2_MAPS_DIRECTORY, "classic.SC2Map"),
                False,
-               True,
+               False,
                False,
                Developer.Luminous)
     Duck_Map = (1,
@@ -31,7 +31,7 @@ class Map(Enum):
                 [os.path.join("Base.SC2Data", "GameData", "Terrain", "DuckMap.xml")],
                 os.path.join(KS2_MAPS_DIRECTORY, "duck_map.SC2Map"),
                 False,
-                True,
+                False,
                 False,
                 None)
     Zerus_Volcanoes = (2,
@@ -73,7 +73,7 @@ class Map(Enum):
                     [os.path.join("Base.SC2Data", "GameData", "Terrain", "FourSeasons.xml")],
                     os.path.join(KS2_MAPS_DIRECTORY, "four_seasons.SC2Map"),
                     True,
-                    False,
+                    True,
                     False,
                     None)
     Heart_Of_Amethyst = (5,
@@ -86,7 +86,7 @@ class Map(Enum):
                          [os.path.join("Base.SC2Data", "GameData", "Terrain", "HeartOfAmethyst.xml")],
                          os.path.join(KS2_MAPS_DIRECTORY, "heart_of_amethyst.SC2Map"),
                          False,
-                         True,
+                         False,
                          False,
                          None)
     Vintage_Shores = (6,
@@ -114,7 +114,7 @@ class Map(Enum):
                       [os.path.join("Base.SC2Data", "GameData", "Terrain", "AiurFountains.xml")],
                       os.path.join(KS2_MAPS_DIRECTORY, "aiur_fountains.SC2Map"),
                       True,
-                      False,
+                      True,
                       False,
                       None)
     Kaldir_Cliffs = (8,
@@ -170,7 +170,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "SnowPrism.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "snow_prism.SC2Map"),
                      True,
-                     False,
+                     True,
                      False,
                      Developer.Luminous)
 
@@ -214,7 +214,7 @@ class Map(Enum):
                      [],
                      os.path.join(KS2_MAPS_DIRECTORY, "canal.SC2Map"),
                      True,
-                     False,
+                     True,
                      False,
                      Developer.Luminous)
     Sand_Fort = (15,
@@ -242,7 +242,7 @@ class Map(Enum):
                      [],
                      os.path.join(KS2_MAPS_DIRECTORY, "mar_sara_wastelands.SC2Map"),
                      True,
-                     False,
+                     True,
                      False,
                      Developer.Luminous)
     Last_Sanctuary = (17,
@@ -256,7 +256,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "LastSanctuary.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "last_sanctuary.SC2Map"),
                      True,
-                     True,
+                     False,
                      False,
                      Developer.Feanor)
     No_Hope = (18,
@@ -270,7 +270,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "NoHope.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "no_hope.SC2Map"),
                      False,
-                     True,
+                     False,
                      False,
                      Developer.SmugWyrmling)
                      
@@ -284,8 +284,9 @@ class Map(Enum):
                      None,
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "CelestialSkylines.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "celestial_skylines.SC2Map"),
-                     True,
-                     True,
+                     False,
+                     False,
+                     False,
                      Developer.SmugWyrmling)
                                         
     # galaxy representation is the string value of the Preset in KS2 Galaxy
