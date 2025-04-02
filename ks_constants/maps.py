@@ -214,7 +214,7 @@ class Map(Enum):
                      [],
                      os.path.join(KS2_MAPS_DIRECTORY, "canal.SC2Map"),
                      True,
-                     True,
+                     False,
                      False,
                      Developer.Luminous)
     Sand_Fort = (15,
@@ -285,7 +285,7 @@ class Map(Enum):
                      [os.path.join("Base.SC2Data", "GameData", "Terrain", "CelestialSkylines.xml")],
                      os.path.join(KS2_MAPS_DIRECTORY, "celestial_skylines.SC2Map"),
                      False,
-                     False,
+                     True,
                      False,
                      Developer.SmugWyrmling)
                                         
